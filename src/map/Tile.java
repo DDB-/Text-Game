@@ -23,7 +23,7 @@ public class Tile {
 	 */
 	private String beforeEventLine, afterEventLine, tileItem;
 	
-	private boolean currentTile, canDig;
+	private boolean currentTile, canDig, eventOccured;
 	
 	private int xCoordinate, yCoordinate;
 	
@@ -36,6 +36,7 @@ public class Tile {
 		
 		currentTile = false;
 		canDig = false;
+		eventOccured = false;
 		
 		this.xCoordinate = _xCoordinate;
 		this.yCoordinate = _yCoordinate;
@@ -82,11 +83,27 @@ public class Tile {
 		this.canDig = _canDig;
 	}
 	
-	public boolean getCurrentTile() {
+	public boolean isCurrentTile() {
 		return this.currentTile;
 	}
 	
 	public void setCurrentTile(boolean _currentTile){
 		this.currentTile = _currentTile;
+	}
+	
+	public int getXCoordinate() {
+		return this.xCoordinate;
+	}
+	
+	public int getYCoordinate() {
+		return this.yCoordinate;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sB = new StringBuilder();
+		sB.append("Location: " + this.xCoordinate + "," + this.yCoordinate + "\n");
+		sB.append((eventOccured ? this.afterEventLine : this.beforeEventLine) + "\n");
+		return sB.toString();
 	}
 }
