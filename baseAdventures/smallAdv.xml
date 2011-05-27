@@ -1,0 +1,391 @@
+<map>
+  <tiles>
+    <tile-array>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>0</xCoordinate>
+        <yCoordinate>0</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>0</xCoordinate>
+        <yCoordinate>1</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>0</xCoordinate>
+        <yCoordinate>2</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>0</xCoordinate>
+        <yCoordinate>3</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>0</xCoordinate>
+        <yCoordinate>4</yCoordinate>
+      </tile>
+    </tile-array>
+    <tile-array>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>1</xCoordinate>
+        <yCoordinate>0</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>1</xCoordinate>
+        <yCoordinate>1</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>1</xCoordinate>
+        <yCoordinate>2</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>1</xCoordinate>
+        <yCoordinate>3</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>1</xCoordinate>
+        <yCoordinate>4</yCoordinate>
+      </tile>
+    </tile-array>
+    <tile-array>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>2</xCoordinate>
+        <yCoordinate>0</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>2</xCoordinate>
+        <yCoordinate>1</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>2</xCoordinate>
+        <yCoordinate>2</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>2</xCoordinate>
+        <yCoordinate>3</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>2</xCoordinate>
+        <yCoordinate>4</yCoordinate>
+      </tile>
+    </tile-array>
+    <tile-array>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>3</xCoordinate>
+        <yCoordinate>0</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>3</xCoordinate>
+        <yCoordinate>1</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>3</xCoordinate>
+        <yCoordinate>2</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>3</xCoordinate>
+        <yCoordinate>3</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>3</xCoordinate>
+        <yCoordinate>4</yCoordinate>
+      </tile>
+    </tile-array>
+    <tile-array>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>4</xCoordinate>
+        <yCoordinate>0</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>4</xCoordinate>
+        <yCoordinate>1</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>4</xCoordinate>
+        <yCoordinate>2</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>4</xCoordinate>
+        <yCoordinate>3</yCoordinate>
+      </tile>
+      <tile>
+        <obstacles>
+          <string>North</string>
+          <string>East</string>
+          <string>South</string>
+          <string>West</string>
+        </obstacles>
+        <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
+        <afterEventLine>Event has happened</afterEventLine>
+        <tileItem>Item</tileItem>
+        <currentTile>false</currentTile>
+        <canDig>false</canDig>
+        <xCoordinate>4</xCoordinate>
+        <yCoordinate>4</yCoordinate>
+      </tile>
+    </tile-array>
+  </tiles>
+  <height>5</height>
+  <width>5</width>
+</map>
