@@ -1,13 +1,14 @@
 package map;
 
-public class Map {
+public class GameMap {
 	private Tile[][] tiles;
 	int height, width;
 	
-	public Map(int _height, int _width){
+	public GameMap(int _height, int _width){
 		this.height = _height;
 		this.width = _width;
 		initializeTiles();
+		
 	}
 	
 	private void initializeTiles(){
@@ -17,5 +18,15 @@ public class Map {
 				tiles[i][j] = new Tile(i, j);
 			}
 		}
+	}
+	
+	public Tile getCurrentTile(){
+		for(Tile[] ts : this.tiles){
+			for(Tile t : ts){
+				if(t.isCurrentTile())
+					return t;
+			}
+		}
+		return null;
 	}
 }
