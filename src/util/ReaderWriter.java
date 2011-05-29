@@ -23,17 +23,16 @@ public class ReaderWriter {
 	 * @param xmlContent XML Content to be written
 	 * @return True on success, False on Exception/Error
 	 */
-	public static boolean writeSave(String fileName, String xmlContent) {
+	public static boolean writeSave(String fileName, Map<String, String> xmlContent) {
 		File dir = new File(DEFAULT_SAVES_DIR + fileName.split(SPLIT_DELIMETER)[0]);
-		System.out.println(dir.toString());
 		
 		if(!dir.isDirectory()) { // Make Directory if it doesn't exist.
 			dir.mkdir();
 		}
 		
-		//This file is for Map data of a saved game
-		File mapFile = new File(dir.toString() + "/" + fileName + MAP_FILE + XML_EXTENSION);
-		//TODO: A file for the Inventory data (if necessary)
+		//These are files for Map and Inventory data of a saved game
+		File mapFile = new File(dir.getPath() + "/" + fileName + MAP_FILE + XML_EXTENSION);
+		File invFile = new File(dir.getPath() + "/" + fileName + INVENTORY_FILE + XML_EXTENSION);
 		
 		if(mapFile.exists()){
 			System.out.println("ERROR: Save already exists with this name");
@@ -41,12 +40,15 @@ public class ReaderWriter {
 		}
 		
 		try {
-			PrintWriter pw = new PrintWriter(mapFile);
-			pw.flush();
-			pw.print(xmlContent);
-			pw.close();
+			for(Map.Entry<String, String> entry : xmlContent.entrySet()){
+				PrintWriter pw = entry.getKey().equals(MAP_FILE) ? 
+						new PrintWriter(mapFile) : new PrintWriter(invFile);
+				pw.flush();
+				pw.print(entry.getValue());
+				pw.close();
+			}
 		} catch (FileNotFoundException e) {
-			System.out.println("Error writing to file " + mapFile.toString());
+			System.out.println("Error writing save to file for " + fileName);
 			return false;
 		}
 		
@@ -61,7 +63,6 @@ public class ReaderWriter {
 	 */
 	public static String loadNewGame(String adventureName) {
 		File adventureFile = new File(DEFAULT_BASE_ADVENTURE_DIR + adventureName + XML_EXTENSION);
-		System.out.println(adventureFile.getAbsolutePath());
 		
 		if(!adventureFile.exists()){
 			System.out.println("No such file exists with the name " + adventureFile.toString());
@@ -84,9 +85,9 @@ public class ReaderWriter {
 	
 	public static Map<String, String> loadExistingGame(String saveName) {
 		Map<String, String> objectMap = new HashMap<String, String>();
-		// Map file to be loaded
+		// Map and Inventory files to be loaded
 		File mapFile = new File(DEFAULT_SAVES_DIR + saveName + "/" + saveName + MAP_FILE + XML_EXTENSION);
-		//TODO: Add Inventory file if necessary
+		File invFile = new File(DEFAULT_SAVES_DIR + saveName + "/" + saveName + INVENTORY_FILE + XML_EXTENSION);
 		
 		if(!mapFile.exists()){
 			System.out.println("No such file exists with the name " + mapFile.toString());
@@ -101,6 +102,10 @@ public class ReaderWriter {
 		try {
 			String xmlContent = new Scanner(mapFile).useDelimiter("\\Z").next();
 			objectMap.put(MAP_FILE, xmlContent);
+			
+			xmlContent = new Scanner(invFile).useDelimiter("\\Z").next();
+			objectMap.put(INVENTORY_FILE, xmlContent);
+			
 			return objectMap;
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found with name " + mapFile.toString());;

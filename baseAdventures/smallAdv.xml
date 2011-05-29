@@ -1,7 +1,7 @@
-<map>
+<map.GameMap>
   <tiles>
-    <tile-array>
-      <tile>
+    <map.Tile-array>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -13,10 +13,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>0</xCoordinate>
         <yCoordinate>0</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -28,10 +29,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>0</xCoordinate>
         <yCoordinate>1</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -43,10 +45,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>0</xCoordinate>
         <yCoordinate>2</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -58,10 +61,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>0</xCoordinate>
         <yCoordinate>3</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -73,12 +77,13 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>0</xCoordinate>
         <yCoordinate>4</yCoordinate>
-      </tile>
-    </tile-array>
-    <tile-array>
-      <tile>
+      </map.Tile>
+    </map.Tile-array>
+    <map.Tile-array>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -90,10 +95,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>1</xCoordinate>
         <yCoordinate>0</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -105,10 +111,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>1</xCoordinate>
         <yCoordinate>1</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -120,10 +127,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>1</xCoordinate>
         <yCoordinate>2</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -135,10 +143,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>1</xCoordinate>
         <yCoordinate>3</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -150,12 +159,13 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>1</xCoordinate>
         <yCoordinate>4</yCoordinate>
-      </tile>
-    </tile-array>
-    <tile-array>
-      <tile>
+      </map.Tile>
+    </map.Tile-array>
+    <map.Tile-array>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -167,10 +177,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>2</xCoordinate>
         <yCoordinate>0</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -182,10 +193,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>2</xCoordinate>
         <yCoordinate>1</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -197,10 +209,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>2</xCoordinate>
         <yCoordinate>2</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -212,10 +225,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>2</xCoordinate>
         <yCoordinate>3</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -227,12 +241,13 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>2</xCoordinate>
         <yCoordinate>4</yCoordinate>
-      </tile>
-    </tile-array>
-    <tile-array>
-      <tile>
+      </map.Tile>
+    </map.Tile-array>
+    <map.Tile-array>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -244,10 +259,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>3</xCoordinate>
         <yCoordinate>0</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -259,10 +275,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>3</xCoordinate>
         <yCoordinate>1</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -274,10 +291,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>3</xCoordinate>
         <yCoordinate>2</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -289,10 +307,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>3</xCoordinate>
         <yCoordinate>3</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -304,12 +323,13 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>3</xCoordinate>
         <yCoordinate>4</yCoordinate>
-      </tile>
-    </tile-array>
-    <tile-array>
-      <tile>
+      </map.Tile>
+    </map.Tile-array>
+    <map.Tile-array>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -321,10 +341,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>4</xCoordinate>
         <yCoordinate>0</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -336,10 +357,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>4</xCoordinate>
         <yCoordinate>1</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -351,10 +373,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>4</xCoordinate>
         <yCoordinate>2</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -366,10 +389,11 @@
         <tileItem>Item</tileItem>
         <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>4</xCoordinate>
         <yCoordinate>3</yCoordinate>
-      </tile>
-      <tile>
+      </map.Tile>
+      <map.Tile>
         <obstacles>
           <string>North</string>
           <string>East</string>
@@ -379,13 +403,14 @@
         <beforeEventLine>Event hasn&apos;t happened</beforeEventLine>
         <afterEventLine>Event has happened</afterEventLine>
         <tileItem>Item</tileItem>
-        <currentTile>true</currentTile>
+        <currentTile>false</currentTile>
         <canDig>false</canDig>
+        <eventOccured>false</eventOccured>
         <xCoordinate>4</xCoordinate>
         <yCoordinate>4</yCoordinate>
-      </tile>
-    </tile-array>
+      </map.Tile>
+    </map.Tile-array>
   </tiles>
   <height>5</height>
   <width>5</width>
-</map>
+</map.GameMap>

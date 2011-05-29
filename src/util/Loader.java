@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import map.GameMap;
+import map.Tile;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
@@ -24,6 +25,7 @@ public class Loader {
 	
 	public static final String GO_BACK = "go back";
 	public static final String LIST_FILES = "show list";
+	public static final String HELP = "help";
 	
 	// Reader to read from user
 	BufferedReader br;
@@ -31,9 +33,19 @@ public class Loader {
 	// Boolean if it is a new game or not
 	boolean isNewGame;
 	
+	// XStream stream to use for this class
+	XStream xstream;
+	
+	// Base Directory which the adventures are looked at
+	File baseDir;
+	
 	public Loader() {
 		br = new BufferedReader(new InputStreamReader(System.in));
 		isNewGame = isNewGame();
+		xstream = new XStream(new DomDriver());
+		
+		baseDir = isNewGame ? new File(DEFAULT_BASE_ADVENTURE_DIR)
+									: new File(DEFAULT_SAVES_DIR);
 	}
 	
 	public HashMap<String, Object> loadGame(){
@@ -48,38 +60,39 @@ public class Loader {
 		
 		for(;;){
 			try {
-				System.out.println("Enter a game to load");
+				System.out.print("Enter a game to load: ");
 				inputLine = br.readLine();
 				dir = isNewGame ? new File(DEFAULT_BASE_ADVENTURE_DIR + inputLine + XML_EXTENSION) 
 									: new File(DEFAULT_SAVES_DIR + inputLine);
 				
+				if(inputLine.equals(HELP)){
+					printErrorHelp();
+					continue;
+				}
+				
 				if(LineParser.parseLine(inputLine).length > 1){
-					File baseDir = isNewGame ? new File(DEFAULT_BASE_ADVENTURE_DIR)
-												: new File(DEFAULT_SAVES_DIR);
 					if(!checkCases(inputLine, baseDir)){
-						System.out.println("Incorrect Command or Too Many Argument for a game name");
-						System.out.println("To load a game, type the name of the game and press enter");
-						System.out.println("To show a list of all possible games to load, type \"show list\"");
-						System.out.println("To go back to the New/Esiting select screen, type \"go back\"");
+						System.out.println("\nERROR: Incorrect Command or Too Many Argument for a game name");
+						printErrorHelp();
 					}
 					continue;
 				}
 				
 				if(dir.exists()){
 					if(isNewGame){
-						String content = ReaderWriter.loadNewGame(dir.getName());
+						String content = ReaderWriter.loadNewGame(dir.getName().substring(0, dir.getName().indexOf(".")));
 						objectMappings = makeHashMap(content);
 					}
 					else {
 						Map<String, String> content = ReaderWriter.loadExistingGame(dir.getName());
 						objectMappings = makeHashMap(content);
 					}
+					System.out.println("Successfully loaded " + inputLine);
 					return objectMappings;
 				}
 				else {
-					System.out.println("No such game exists with this name.");
-					System.out.println("To show a list of all possible games to load, type \"show list\"");
-					System.out.println("To go back to the New/Esiting select screen, type \"go back\"");
+					System.out.println("\nERROR: No such game exists with this name.");
+					printErrorHelp();
 				}
 
 			} catch (IOException e) {
@@ -99,7 +112,7 @@ public class Loader {
 		
 		for(;;){
 			try {
-				System.out.println("(N)ew game or (E)xisting game? ");
+				System.out.print("(N)ew game or (E)xisting game? ");
 				inputLine = br.readLine();
 				if(inputLine.equalsIgnoreCase("N")){
 					return true;
@@ -126,7 +139,6 @@ public class Loader {
 			return null;
 		
 		HashMap<String, Object> map = new HashMap<String, Object>();
-		XStream xstream = new XStream(new DomDriver());
 		
 		map.put(MAP_FILE, (GameMap)xstream.fromXML(content));
 		map.put(INVENTORY_FILE, new Inventory());
@@ -147,7 +159,6 @@ public class Loader {
 			return null;
 		
 		HashMap<String, Object> map = new HashMap<String, Object>();
-		XStream xstream = new XStream(new DomDriver());
 		
 		for(Map.Entry<String, String> entry : content.entrySet()){
 			if(entry.getKey().equals(MAP_FILE))
@@ -156,21 +167,39 @@ public class Loader {
 				map.put(INVENTORY_FILE, new Inventory());
 		}
 		
-		return null;
+		return map;
 	}
 	
+	/**
+	 * Check the "go back" and "show list" cases. If those were input then
+	 * I take the appropriate action and return true. Otherwise I return false
+	 * as nothing good was entered.
+	 * 
+	 * @param input User input to be checked for cases
+	 * @param dir Directory to scan if the "show list" action used
+	 * @return True if a case happened, False if one didn't
+	 */
 	private boolean checkCases(String input, File dir) {
 		if(input.trim().equals(GO_BACK)){
 			isNewGame = isNewGame();
 			return true;
 		}
 		else if(input.trim().equals(LIST_FILES)){
+			System.out.println("\nLIST OF FILES:");
 			for(File f : dir.listFiles()){
-				System.out.println(f.getName());
+				System.out.println(f.getName().replaceFirst(XML_EXTENSION, ""));
 			}
+			System.out.println();
 			return true;
 		}
 		else
 			return false;
+	}
+	
+	private void printErrorHelp(){
+		System.out.println("- To load a game, type the name of the game to load");
+		System.out.println("- To show a list of all possible games to load, type \"show list\"");
+		System.out.println("- To go back to the New/Esiting select screen, type \"go back\"");
+		System.out.println("- To view this message, type \"help\"\n");
 	}
 }

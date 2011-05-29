@@ -1,31 +1,29 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import static util.ReaderWriter.INVENTORY_FILE;
+import static util.ReaderWriter.MAP_FILE;
+import inv.Inventory;
+
+import java.util.HashMap;
 
 import map.GameMap;
-import map.Tile;
 import util.Loader;
-import util.ReaderWriter;
-
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.DomDriver;
+import util.Saver;
 
 public class GameController {
 	
 	public static void main(String[] args){
-		/*Map map = new Map(5, 5);
+		/*GameMap map = new GameMap(5, 5);
 		
 		XStream x = new XStream(new DomDriver());
 		
-		x.alias("tile", Tile.class);
-		x.alias("map", Map.class);
-		
 		String xml = x.toXML(map);
-		ReaderWriter.writeSave("smallSave", xml);
+		Map<String, String> hashMap = new HashMap<String, String>();
+		hashMap.put(MAP_FILE, xml);
+		hashMap.put(INVENTORY_FILE, null);
+		ReaderWriter.writeSave("smallSave", hashMap);
 		java.util.Map<String, String> nXml = ReaderWriter.loadExistingGame("smallSave");
-		Map newMap = (Map)x.fromXML(nXml.get(ReaderWriter.MAP_FILE));
+		GameMap newMap = (GameMap)x.fromXML(nXml.get(ReaderWriter.MAP_FILE));
 		System.out.println(newMap.getCurrentTile());*/
 		
 		/*System.out.println("Enter a command: ");
@@ -41,7 +39,12 @@ public class GameController {
 		System.out.println("Command: " + inputLine);*/
 		
 		Loader loader = new Loader();
-		loader.loadGame();
+		HashMap<String, Object> mappedObjects = loader.loadGame();
+		GameMap gameMap = (GameMap)mappedObjects.get(MAP_FILE);
+		Inventory inventory = (Inventory)mappedObjects.get(INVENTORY_FILE);
+		
+		Saver saver = new Saver();
+		saver.saveGame(mappedObjects);
 	}
 	
 }
